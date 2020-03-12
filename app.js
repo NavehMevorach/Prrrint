@@ -107,6 +107,7 @@ module.exports = app
 
 /*
 -- TODO --
+ Add Trim to the validation of url
  3. Deploy to heroku and only then purchase a cheap domain name.
  4. Send the website to few friends for validation (with  the fake sb paypal)
  5. add the real PAYPAL 
