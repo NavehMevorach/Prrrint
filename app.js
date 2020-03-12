@@ -50,7 +50,7 @@ const sendPasswordReset = async (user, address) => {
 // --- Routes ---
 
 app.get('/', async (req, res) => {
-  res.senFile(path.join(__dirname ,'public', 'index.html')
+  res.senFile(path.join(__dirname ,'public', 'index.html'))
 })
 
 app.post('/paypal-transaction-complete', async (req, res) => {
