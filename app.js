@@ -50,7 +50,7 @@ const sendPasswordReset = async (user, address) => {
 // --- Routes ---
 
 app.get('/', async (req, res) => {
-  res.sendFile('/index.html')
+  res.senFile(path.join(__dirname ,'public', 'index.html')
 })
 
 app.post('/paypal-transaction-complete', async (req, res) => {
@@ -107,9 +107,6 @@ module.exports = app
 
 /*
 -- TODO --
-2. Test the app.
-3. Model the app
-
  3. Deploy to heroku and only then purchase a cheap domain name.
  4. Send the website to few friends for validation (with  the fake sb paypal)
  5. add the real PAYPAL 
