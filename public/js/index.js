@@ -8,7 +8,6 @@ const photoError = document.querySelector('.err-message--photo')
 const searchError = document.querySelector('.err-message--search')
 
 let url
-let actionStatus
 let price
 
 paypal

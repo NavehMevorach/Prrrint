@@ -34,12 +34,6 @@ export const changeStep = (toStepNum, direction) => {
         .classList.toggle('form--hide')
     } else {
       if (lastStep === 3) {
-        // document
-        //   .querySelector(`.stage-${toStepNum + 2}`)
-        //   .classList.add('form--hide')
-        // document
-        //   .querySelector(`.stage-${toStepNum + 2}`)
-        //   .classList.remove('form--show')
         location.reload(true)
       } else {
         document
@@ -58,10 +52,6 @@ export const changeStep = (toStepNum, direction) => {
     }
     lastStep = toStepNum
 
-    // document.querySelector(`.stage-${countProcessStage}`).style.display = 'none'
-    // countProcessStage === 3 ? (countProcessStage = 1) : (countProcessStage += 1)
-    // document.querySelector(`.stage-${countProcessStage}`).style.display =
-    //   countProcessStage === 2 ? 'grid' : 'flex'
 
     // Change the progress bar
     changeNavActiveStep(toStepNum)
