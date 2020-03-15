@@ -51,8 +51,9 @@ const sendPasswordReset = async (user, address) => {
 
 app.get('/', async (req, res) => {
   // Send static page
-  res.sendFile(path.join(__dirname ,'public', 'index.html'))
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
+
 
 app.post('/paypal-transaction-complete', async (req, res) => {
   // 1. Get the order ID from the request body
