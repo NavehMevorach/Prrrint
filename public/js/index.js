@@ -83,7 +83,6 @@ const getUserInfo = async (userProfile = '3lianaxz') => {
   const allURL = userInfo.edge_owner_to_timeline_media.edges.map(
     el => el.node.display_url
   )
-  console.log(allURL)
 }
 
 getUserInfo()

@@ -1,7 +1,6 @@
 // Check for valid URL
 export const validURL = url => {
   // OPTION 2
-  console.log(url)
   const patternFacebook = new RegExp(
     /(https?)?:?(www)?facebook\.com\/(media).{3}/
   )
