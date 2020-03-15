@@ -51,8 +51,7 @@ const sendPasswordReset = async (user, address) => {
 
 app.get('/', async (req, res) => {
   // Send static page
-  const index = path.join(__dirname, 'public', 'Index.html');
-  res.sendFile(index);
+  res.sendFile('Index.html');
 })
 
 
