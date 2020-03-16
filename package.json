@@ -8,9 +8,9 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "concat:css": "concat -o public/css/style.concat.css public/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" public/css/style.concat.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
     "watch:js": "parcel watch public/js/index.js --out-dir public/js --out-file bundle.js",
     "build:js": "parcel build public/js/index.js --out-dir public/js --out-file bundle.js"

@@ -318,21 +318,11 @@ ul {
   }
   &__steps {
     width: 100%;
-    position: relative;
     @media only screen and (max-width: $bp-sd) {
       margin-top: 5rem;
     }
   }
 
-  &__steps::before {
-    content: '';
-    width: 1px;
-    height: 100%;
-    border-left: 1px dashed #ddd;
-    position: absolute;
-    top: 0;
-    left: 3rem;
-  }
 
   &__step {
     display: flex;
