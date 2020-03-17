@@ -86,3 +86,28 @@ const getUserInfo = async (userProfile = '3lianaxz') => {
 }
 
 getUserInfo()
+
+
+
+// https://api.instagram.com/oauth/authorize
+//   ?client_id=2844179692295387
+//   &redirect_uri=https://prrrint.herokuapp.com/
+//   &scope=user_profile,user_media
+//   &response_type=code
+
+ 
+  // https://api.instagram.com/oauth/access_token \
+  // -F client_id=2844179692295387 \
+  // -F client_secret=6e83d43ab2064f1cca06d3e454799d9f \
+  // -F grant_type=authorization_code \
+  // -F redirect_uri=https://prrrint.herokuapp.com/ \
+  // -F code= AQAvoJmNTGjWctZX_I_qd5GlSdGPtLjUN5S5TyiChkI55cFqFmYxIPpV1lqHz6TgLQ1U33XHg0KXzr5WStmDp1rjBrwriPVuiZWrFTTU_STru0yo7FmBSnpOPfKC48hVi5TBdStSoU4rMmBdGG_mAEDobUQjxBsN7GFyXJ_JeuSFi2Nd6SwTDf5bwsTMfM_P4UHsyNz8KssF6lKy3ocJ8GrJ5Nweo3MbYbn3mAZhlIkh2A
+
+  // IGQVJXY3ZAQSmIzVi1xNUE0eThQTEIzeWp6UVVad3VEdDZAuQ2NlUkFucVVmY0sxLVNNTUcxTjh5ZAFVNUzBpTWJMX3NLdVlqTWNTUTlObFE1Y084ZAnNlTF9vWF9fWFhSZAEU0WmF2aWhUbng0N3hLZAHNkQTByV2RRYlpFbUxR
+  // 17841400032482437
+
+
+  // https://graph.instagram.com/17841400032482437?fields=id,username&access_token=IGQVJXY3ZAQSmIzVi1xNUE0eThQTEIzeWp6UVVad3VEdDZAuQ2NlUkFucVVmY0sxLVNNTUcxTjh5ZAFVNUzBpTWJMX3NLdVlqTWNTUTlObFE1Y084ZAnNlTF9vWF9fWFhSZAEU0WmF2aWhUbng0N3hLZAHNkQTByV2RRYlpFbUxR
+
+
+  // https://graph.instagram.com/me?fields=id,username&access_token=IGQVJ...
